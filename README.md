@@ -6,9 +6,11 @@ This extension only work with [Raycast](https://raycast.com)
 
 <video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/32fe5400-bc29-45c1-8641-202e83a2a837"></video>
 
+
 ## Motivation
 
 As a non-native English speaker, I often struggle to find my words and that can lead to spelling mistakes, with the help of such an assistant, I can now correct myself and improve along the way.
+
 
 ## Installation
 
@@ -22,10 +24,10 @@ You will need to have [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io/)
 3. Install dependencies `npm install`
 4. Go to Raycast, run `Import Extension` and select the folder
 5. Add your `Open AI API Key` to the configuration ([Guide here](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/))
+6. Enjoy the command 🎉
 
 <img width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/b45f4e4d-31a8-4da0-b98f-97fc569a6e4c"/>
 
-6. Enjoy the command 🎉
 
 ## Features
 
@@ -50,6 +52,7 @@ Do you want to specify a command for one-time use? Simply write it and press ent
 ChatGPT is at your fingertips!
 
 <video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/7d418624-cd7d-4d3e-8bda-14083a0980aa"></video>
+
 
 ## Why is it not in the official Raycast store?
 
