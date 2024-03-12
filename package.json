@@ -1,0 +1,62 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "ai-writing-assistant",
+  "title": "AI Writing Assistant",
+  "description": "AI Writing Assistant is here to assist you in any of your writing tasks, from fixing grammar to improving a paragraph.",
+  "icon": "command-icon.png",
+  "author": "pierremouchan",
+  "categories": [
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "AI Writing Assistant",
+      "description": "AI Writing Assistant is here to assist you in any of your writing tasks, from fixing grammar to improving a paragraph.",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "apiKey",
+      "key": "apiKey",
+      "title": "API Key",
+      "description": "Your API key from OpenAI",
+      "type": "password",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "commands",
+      "key": "commands",
+      "title": "Commands",
+      "description": "Choose the command you want to execute",
+      "type": "file",
+      "placeholder": "commands.csv",
+      "required": false
+    }
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.16.1",
+    "@raycast/api": "^1.68.1",
+    "@raycast/utils": "^1.12.5",
+    "csv-parse": "^5.5.5",
+    "openai": "^4.28.4"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
