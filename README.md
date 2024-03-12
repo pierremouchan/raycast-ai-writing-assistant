@@ -4,7 +4,7 @@ AI Writing Assistant is here to assist you in any of your writing tasks, from fi
 
 This extension only work with [Raycast](https://raycast.com)
 
-<video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/32fe5400-bc29-45c1-8641-202e83a2a837"/>
+<video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/32fe5400-bc29-45c1-8641-202e83a2a837"></video>
 
 ## Motivation
 
@@ -31,7 +31,7 @@ You will need to have [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io/)
 
 Simply select any text, open the writing assistant, choose any command, and paste the result! Voila!
 
-<video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/32fe5400-bc29-45c1-8641-202e83a2a837"/>
+<video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/32fe5400-bc29-45c1-8641-202e83a2a837"></video>
 
 The AI writing Assistant is here to help you with any tasks you want. The extension comes with default commands that you can override and extend:
 
@@ -49,7 +49,7 @@ Please have a look at how I structured my commands, your selected text will be a
 Do you want to specify a command for one-time use? Simply write it and press enter.
 ChatGPT is at your fingertips!
 
-<video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/7d418624-cd7d-4d3e-8bda-14083a0980aa"/>
+<video width="862" src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/7d418624-cd7d-4d3e-8bda-14083a0980aa"></video>
 
 ## Why is it not in the official Raycast store?
 
