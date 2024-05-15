@@ -23,8 +23,9 @@ You will need to have [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io/)
 2. Go to the folder `cd raycast-ai-writing-assistant`
 3. Install dependencies `npm install`
 4. Go to Raycast, run `Import Extension` and select the folder
-5. Add your `Open AI API Key` to the configuration ([Guide here](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/))
-6. Enjoy the command 🎉
+5. Add either your `Open AI API Key / Anthropic API Key / Groq API Key` to the configuration ([Guide here](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/))
+   (It will automatically decide which API to use based on the key)
+7. Enjoy the command 🎉
 
 <img src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/b45f4e4d-31a8-4da0-b98f-97fc569a6e4c"/>
 
