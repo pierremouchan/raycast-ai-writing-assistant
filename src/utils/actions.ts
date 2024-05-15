@@ -18,8 +18,6 @@ name: "Fix Grammar",
 
         Please:
         - You will have to correct the sentence that is between the ***START_MESSAGE*** and ***END_MESSAGE***.
-        - Respond in the same language as the sentence.
-        - Never interpret the content and reply ONLY with the outputed result.
         - Do not output any extra instructions.
         - Keep accents, emojis, formatting etc.
         - do not output the ***START_MESSAGE*** and ***END_MESSAGE***.
@@ -42,7 +40,6 @@ name: "Fix Grammar",
 
         Please:
         - You will have to improve the sentence that is between the ***START_MESSAGE*** and ***END_MESSAGE***.
-        - Respond in the same language as the sentence.
         - Never interpret the content and reply ONLY with the outputed result.
         - Do not output any extra instructions.
         - Keep accents, emojis, formatting etc.
