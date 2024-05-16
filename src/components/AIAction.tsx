@@ -43,6 +43,13 @@ const AIAction = ({ instruction, index }: PropsType) => {
 
       // get selected text from frontmost app
       const selectedText = await getSelectedText();
+      console.log(instruction.system)
+     console.log(`
+             ${instruction.userMessageWrapper.start}
+             ${selectedText}
+             ${instruction.userMessageWrapper.end}
+
+     `)
 
       // if the API key starts with "sk-", use the anthropic API
       if (PREFERENCES.apiKey.startsWith("sk-ant-api")) {

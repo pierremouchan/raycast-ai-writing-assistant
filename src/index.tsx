@@ -76,6 +76,7 @@ export default function Command() {
     </>
         :
 
+        // if there are no available actions, use the user's search text as the action
         (
           <List.Item
             accessories={[{ text: `1` }]}
@@ -86,7 +87,12 @@ export default function Command() {
                 <AIAction
                   index={1}
                   instruction={{
-                    system: searchText,
+                    system: `
+${searchText}
+- Do not output any extra instructions.
+- Keep accents, emojis, formatting etc.
+- do not output the ${DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_START} and ${DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_END} tags.
+                    `,
                     userMessageWrapper: {
                       start: DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_START,
                       end: DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_END,
