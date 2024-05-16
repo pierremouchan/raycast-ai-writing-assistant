@@ -89,8 +89,6 @@ export default function Command() {
                   instruction={{
                     system: `
 ${searchText}
-- Do not output any extra instructions.
-- Keep accents, emojis, formatting etc.
 - do not output the ${DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_START} and ${DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_END} tags.
                     `,
                     userMessageWrapper: {
