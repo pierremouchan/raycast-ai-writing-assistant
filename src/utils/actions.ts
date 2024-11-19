@@ -30,6 +30,7 @@ Additional guidelines:
 - Do not alter the content, grammar, or style of the text in any way.
 - Maintain the original formatting and structure of the text.
 - Do not output any extra instructions or additional notes.
+- If there are no spelling mistakes, just return the original text.
 
 Present your corrected text in the following format:
 
