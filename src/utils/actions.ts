@@ -39,6 +39,7 @@ Present your corrected text in the following format:
 </output>
 
 Remember to focus solely on correcting spelling mistakes and nothing else.
+Do not output any extra instructions or additional notes.
 
 `},
   IMPROVE_SENTENCE: {
@@ -87,6 +88,7 @@ Present your translation in the following format:
 </output>
 
 Remember, your goal is to enhance the quality of the writing while respecting the original author's voice and intent.
+Do not output any extra instructions or additional notes.
 `},
   TRANSLATE_TO_FRENCH: {
     icon: "🇫🇷",
@@ -111,6 +113,7 @@ Present your translation in the following format:
 </output>
 
 Remember to provide a fluent and natural-sounding French translation that accurately conveys the meaning of the original text.
+Do not output any extra instructions or additional notes.
 `},
   TRANSLATE_TO_ENGLISH: {
     icon: "🇬🇧",
@@ -135,6 +138,7 @@ Present your translation in the following format:
 </output>
 
 Remember to provide a fluent and natural-sounding English translation that accurately conveys the meaning of the original text.
+Do not output any extra instructions or additional notes.
 `},
 
 } as Record<string, DefaultActionsType>;
