@@ -58,10 +58,6 @@ export default function Command() {
                     index={index + 1}
                     instruction={{
                       system: availableActions[action].instructions,
-                      userMessageWrapper: {
-                        start: DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_START,
-                        end: DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_END,
-                      },
                     }}
                   />
                 </ActionPanel>
@@ -81,13 +77,13 @@ export default function Command() {
                 index={1}
                 instruction={{
                   system: `
-${searchText}
-- do not output the ${DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_START} and ${DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_END} tags.
+                  Based on the input text, ${searchText}, provide a response.
+
+                  Answer in the following format:
+                  <output>
+                  [Your response goes here]
+                  </output>
                     `,
-                  userMessageWrapper: {
-                    start: DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_START,
-                    end: DEFAULT_ACTIONS_PARAMS.USER_MESSAGE_WRAPPER_END,
-                  },
                   submitText: "Ask",
                 }}
               />

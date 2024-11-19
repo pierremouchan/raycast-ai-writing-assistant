@@ -43,7 +43,9 @@ The AI writing Assistant is here to help you with any tasks you want. The extens
 You have access to the default example file here: `assets/default-ai-commands-example.csv`
 You can open it in any CSV tool, add as many commands as you want, and configure the Raycast extension to use this new file.
 
-Please have a look at how I structured my commands, your selected text will be appended between an opening `***START_MESSAGE***` and a closing `***END_MESSAGE***`. This helps the AI to be more precise and only output the desired result.
+Please have a look at how I structured my commands, your selected text will be appended between an opening `<input>` and a closing `</input>`. This helps the AI to be more precise and only output the desired result.
+
+The result will be wrapped inside a `<output>` and `</output>` XML tags.
 
 <img src="https://github.com/pierremouchan/raycast-ai-writing-assistant/assets/38973205/8b45f610-01ee-49c2-a26a-a6dc98b3922e"/>
 

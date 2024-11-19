@@ -19,10 +19,6 @@ const groq = new Groq({
 type PropsType = {
   instruction: {
     system: string;
-    userMessageWrapper: {
-      start: string;
-      end: string;
-    };
     submitText?: string;
   };
   index: number;
@@ -44,16 +40,17 @@ const AIAction = ({ instruction, index }: PropsType) => {
       if (PREFERENCES.apiKey.startsWith("sk-ant-api")) {
         // send request and action to anthropic
         const res = await anthropic.messages.create({
-          model: "claude-3-5-sonnet-20240620",
+          model: "claude-3-5-haiku-latest",
           max_tokens: 1024,
           system: instruction.system,
           messages: [
             {
               role: "user",
               content: `
-             ${instruction.userMessageWrapper.start}
+              Here is the input text:
+              <input>
              ${selectedText}
-             ${instruction.userMessageWrapper.end}
+             </input>
             `,
             },
           ],
@@ -75,9 +72,10 @@ const AIAction = ({ instruction, index }: PropsType) => {
             {
               role: "user",
               content: `
-             ${instruction.userMessageWrapper.start}
+              Here is the input text:
+              <input>
              ${selectedText}
-             ${instruction.userMessageWrapper.end}
+             </input>
             `,
             },
           ],
@@ -87,7 +85,7 @@ const AIAction = ({ instruction, index }: PropsType) => {
       } else {
         // send request and action to OpenAI
         const res = await openai.chat.completions.create({
-          model: "gpt-4o",
+          model: "gpt-4o-mini",
           max_tokens: 1024,
           messages: [
             {
@@ -97,9 +95,10 @@ const AIAction = ({ instruction, index }: PropsType) => {
             {
               role: "user",
               content: `
-             ${instruction.userMessageWrapper.start}
+              Here is the input text:
+              <input>
              ${selectedText}
-             ${instruction.userMessageWrapper.end}
+             </input>
             `,
             },
           ],
@@ -113,6 +112,9 @@ const AIAction = ({ instruction, index }: PropsType) => {
       if (!response) {
         throw new Error("Failed to get response from AI");
       }
+
+      // remove the <output> and </output> tags
+      response = response.replace(/<output>/g, "").replace(/<\/output>/g, "");
 
       // copy response to clipboard and show success message + sound
       await Clipboard.copy(response);
