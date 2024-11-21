@@ -46,12 +46,10 @@ const AIAction = ({ instruction, index }: PropsType) => {
           messages: [
             {
               role: "user",
-              content: `
-              Here is the input text:
+              content: `Here is the input text:
               <input>
              ${selectedText}
-             </input>
-            `,
+             </input>`,
             },
           ],
         });
@@ -71,12 +69,10 @@ const AIAction = ({ instruction, index }: PropsType) => {
             },
             {
               role: "user",
-              content: `
-              Here is the input text:
+              content: `Here is the input text:
               <input>
              ${selectedText}
-             </input>
-            `,
+             </input>`,
             },
           ],
         });
@@ -94,12 +90,10 @@ const AIAction = ({ instruction, index }: PropsType) => {
             },
             {
               role: "user",
-              content: `
-              Here is the input text:
+              content: `Here is the input text:
               <input>
              ${selectedText}
-             </input>
-            `,
+             </input>`,
             },
           ],
         });
@@ -115,6 +109,7 @@ const AIAction = ({ instruction, index }: PropsType) => {
 
       // remove the <output> and </output> tags
       response = response.replace(/<output>/g, "").replace(/<\/output>/g, "");
+      response = response.trim();
 
       // copy response to clipboard and show success message + sound
       await Clipboard.copy(response);
